@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>EventoApp</title>
+</head>
+<body>
+    <h1>Esta Pagina É Dedicada ao Cadatro de Eventos</h1>
+    <form method="post"><!--Criação das entradas de texto que irão entrar no Formulario -->
+        Nome: <input type="text" value="" name="nome"/><br> 
+        Local: <input type="text" value="" name="local"/> <br>     
+        Data do Evento: <input type="date" value="" name="data"/><br>
+        Horario do Evento: <input type="text" value="" name="horarioDeInicio"/><br>
+        <button type="submit">Enviar</button><!--Botão para jogar as informaçoes preenchidas no formulario dentro do banco de dados-->
+    </form>
+</body>
+</html>
