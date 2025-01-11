@@ -1,6 +1,15 @@
 <html>
 
 <body>
-    <h3>Helo World com o SpringBoot</h3>
+    <h1>Lista de Eventos</h1>
+    <h3><a href="/cadastroDoEvento">Cadastrar novo Evento</a></h3>
+    <div th:each="evento : ${eventos}">
+        <div class="row">
+            <p><span th:text="${evento.nome}"></span></p>
+            <p><span th:text="${evento.local}"></span></p>
+            <p><span th:text="${evento.data}"></span></p>
+            <p><span th:text="${evento.horarioDeInicio}"></span></p>
+        </div>
+    </div>
 </body>
 </html>
