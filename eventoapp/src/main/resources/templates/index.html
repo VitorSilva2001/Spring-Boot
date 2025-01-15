@@ -17,9 +17,9 @@
             <th>Data</th>
             <th>Hora De Inicio</th>
         </thead>.
-        <body>
+        <body> 
             <tr th:each="evento : ${eventos}">
-                    <td><span th:text="${evento.nome}"></span></td>
+                    <td><a th:href="${(#mvc.url('CDE#detalhesEvento').arg(0, evento.codigo)).build()}"><span th:text="${evento.nome}"></span></a></td>
                     <td><span th:text="${evento.local}"></span></td>
                     <td><span th:text="${evento.data}"></span></td>
                     <td><span th:text="${evento.horarioDeInicio}"></span></td>
