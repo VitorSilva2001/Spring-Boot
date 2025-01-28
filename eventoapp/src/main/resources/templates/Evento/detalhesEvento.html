@@ -17,6 +17,7 @@
             <p>Data: <span th:text="${evento.data}"></span></p>  
             <p>Inicio: <span th:text="${evento.horarioDeInicio}"></span></p>  
         </div>   
+        <th:block th:include="mensagemValidacao"></th:block>
         <form method="post">
             Nome: <input type="text" value="" name="nomeConvidado"/>
             Rg: <input type="text" value="" name="rg"/>
